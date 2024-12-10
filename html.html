@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/50973b2bbb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/general.css">
+    <link rel="stylesheet" href="/css/container.css">
+    <script src="./script.js" defer></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="container">
+        <h4>Password Generator</h4>
+
+        <div class="output">
+            <span id="result"></span>
+            <i class="fa-regular fa-clipboard" id="clipboard"></i>
+        </div>
+
+        <form id="form" action="">
+            <div class="group-form">
+                <label for="pwdInput">Password Length</label>
+                <input id="pwdInput" type="number" value="10" min="4" max="20">
+            </div>
+            <div class="group-form">
+                <label for="upperInput">Include uppercase letters</label>
+                <input type="checkbox" name="" id="upperInput">
+            </div>
+            <div class="group-form">
+                <label for="lowerInput">Include lowercase letters</label>
+                <input type="checkbox" name="" id="lowerInput">
+            </div>
+            <div class="group-form">
+                <label for="numbersInput">Include numbers</label>
+                <input type="checkbox" name="" id="numbersInput">
+            </div>
+            <div class="group-form">
+                <label for="symbolsInput">Include symbols</label>
+                <input type="checkbox" name="" id="symbolsInput">
+            </div>
+            <input class="submit-btn" type="submit" value="Generate Password">
+        </form>
+        
+    </div>
+</body>
+</html>

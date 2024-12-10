@@ -1,0 +1,62 @@
+.container {
+    background-color: #8999d1; 
+    padding: 12px;
+    width: 300px;
+    color: white;
+}
+
+.container h4 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container .output {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #363b4b;
+    padding: 5px 7px;
+    margin-bottom: 20px;
+}
+
+.container .output i {
+    cursor: pointer;
+    background-color: #79819b;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.container .output span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container form label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.container form .group-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container form .submit-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.15s;
+    font-weight: bold;
+    color: white;
+    background-color: #363b4b;
+}
+
+.container form .submit-btn:hover {
+    opacity: 0.7;
+}
