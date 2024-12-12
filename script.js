@@ -28,9 +28,18 @@ const symbols = [
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     let password = ''
+    const inputs = [upperInput, lowerInput, numbersInput, symbolsInput]
+
+    const valid = inputs.find(input => input.checked == true)
+
+    // all the inputs are unchecked so stop
+    if (!valid) {
+        alert('please select at least one input')
+        return 
+    }
+    
     const n = pwdLength.value
 
-    const inputs = [upperInput, lowerInput, numbersInput, symbolsInput]
     const newArr = []
 
     for (let input of inputs) {
