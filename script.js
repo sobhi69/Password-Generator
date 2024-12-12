@@ -38,8 +38,6 @@ form.addEventListener('submit', (e) => {
         return 
     }
     
-    const n = pwdLength.value
-
     const newArr = []
 
     for (let input of inputs) {
@@ -63,6 +61,8 @@ form.addEventListener('submit', (e) => {
 
     // to create a range Math.floor(Math.random() * (max - min) + min) 
 
+    const n = pwdLength.value
+    
     for (let i = 0; i < n; i++) {
         const randomIndex = Math.floor(Math.random() * (newArr.length - 0) + 0)
         password += newArr[randomIndex]
@@ -79,5 +79,3 @@ clipboard.addEventListener('click', (e) => {
     navigator.clipboard.writeText(result.innerText)
     alert('password added to your clipboard📋')
 })
-
-console.log(navigator.clipboard.readText())
